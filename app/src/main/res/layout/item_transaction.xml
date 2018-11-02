@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_3sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginRight="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_7sdp"
+    app:cardCornerRadius="@dimen/_4sdp">
+
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:gravity="right"
+        android:text="Status"
+        android:textColor="@color/Red" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvAdertise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/calibri_regular"
+            android:text="Title for advertise  Premium"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <TextView
+            android:id="@+id/tvSeller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri_regular"
+            android:text="Seller >> Buyer"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri_regular"
+            android:text="Date"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri_regular"
+            android:text="Amount >> Payment method"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+

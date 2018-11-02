@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@color/lightgrey"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvbrand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_weight="1"
+        android:text="Brand"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/tvaccura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:text="Accura"
+        android:textSize="@dimen/_12sdp" />
+</LinearLayout>
+

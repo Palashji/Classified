@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <group
+            android:id="@+id/grp4"
+            android:checkableBehavior="single">
+
+
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/ic_profile"
+                android:title="My Profile"
+                app:actionLayout="@layout/drawerbackbutton" />
+        </group>
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_homeicon"
+            android:title="Browse"
+            app:actionLayout="@layout/drawerbackbutton" />
+    </group>
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_stuff"
+            android:icon="@drawable/ic_cameraicon"
+            android:title="Sell Your Stuff"
+            app:actionLayout="@layout/drawerbackbutton" />
+    </group>
+    <group
+        android:id="@+id/grou9"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_ads"
+            android:icon="@drawable/ic_ads"
+            android:title="My Ads"
+            app:actionLayout="@layout/drawerbackbutton" />
+    </group>
+
+
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chaticon"
+            android:title="Chat"
+            app:actionLayout="@layout/drawerbackbutton" />
+    </group>
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/ic_notificationicn"
+            android:title="Notifications"
+            app:actionLayout="@layout/drawerbackbutton" />
+    </group>
+    <group
+        android:id="@+id/grp10"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_transaction"
+            android:icon="@drawable/ic_transaction"
+            android:title="Transaction"
+            app:actionLayout="@layout/drawerbackbutton" />
+    </group>
+
+
+    <group
+        android:id="@+id/grp7"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/password"
+            android:icon="@drawable/ic_lock"
+            android:title="Change Password"
+            app:actionLayout="@layout/drawerbackbutton" />
+    </group>
+
+
+    <group
+        android:id="@+id/grp5"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/information"
+            android:icon="@drawable/ic_information"
+            android:title="Help"
+            app:actionLayout="@layout/drawerbackbutton" />
+    </group>
+    <group
+        android:id="@+id/grp12"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout"
+            app:actionLayout="@layout/drawerbackbutton" />
+    </group>
+
+
+</menu>

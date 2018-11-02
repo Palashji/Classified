@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:titleTextColor="@color/secondary_text">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvPremium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="Electronics"
+                android:fontFamily="@font/calibri_regular"
+
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_20sdp" />
+
+            <TextView
+                android:id="@+id/tvall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="end"
+                android:fontFamily="@font/calibri_regular"
+
+                android:text="See all"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_20sdp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleViewPremium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPremium"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/tvLatest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycleViewPremium"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/calibri_regular"
+
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Furniture"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_20sdp" />
+
+            <TextView
+                android:id="@+id/tvsee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvLatest"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:gravity="end"
+                android:fontFamily="@font/calibri_regular"
+
+                android:text="See all"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_20sdp" />
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/recycleViewLatest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvsee"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycleViewLatest"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/calibri_regular"
+
+                android:text="Indore"
+                android:textColor="@color/primary_text"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/seee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tvCategory"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:gravity="end"
+                android:text="See all"
+                android:fontFamily="@font/calibri_regular"
+
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_20sdp" />
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/recycleViewCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/seee"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="vertical" />
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icons">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tvdefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:text="Default"
+        android:textSize="@dimen/_17sdp" />
+
+    <TextView
+        android:id="@+id/tvnewest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdefault"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Newest first"
+        android:textSize="@dimen/_17sdp" />
+
+    <TextView
+        android:id="@+id/tvclosest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvnewest"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Closest first"
+        android:textSize="@dimen/_17sdp" />
+
+    <TextView
+        android:id="@+id/tvlowhigh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvclosest"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Price: low to high"
+        android:textSize="@dimen/_17sdp" />
+
+    <TextView
+        android:id="@+id/tvhighlow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvlowhigh"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Price: high to low"
+        android:textSize="@dimen/_17sdp" />
+
+</RelativeLayout>

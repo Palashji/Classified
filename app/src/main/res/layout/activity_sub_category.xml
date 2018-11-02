@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/primary_xlight"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/itemCardViewfull"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvtext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/custom_rectangle"
+                android:drawableLeft="@drawable/ic_briefcase"
+                android:drawableRight="@drawable/ic_menu"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_14sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Trabajos"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:id="@+id/ettext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/custom_rectangle"
+                android:paddingLeft="@dimen/_40sdp"
+                android:text="Que" />
+
+            <TextView
+                android:id="@+id/tvtexting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/custom_rectangle"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="Donde ?" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:layout_marginRight="@dimen/_60sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/btn_light"
+                android:drawableLeft="@drawable/ic_magnifyingglass"
+                android:paddingLeft="@dimen/_60sdp"
+                android:paddingRight="@dimen/_50sdp"
+                android:text="BUSCAR"
+                android:textColor="@color/icons" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_below="@+id/itemCardViewfull"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

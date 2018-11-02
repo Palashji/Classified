@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+
+    <ImageView
+        android:id="@+id/imgwhite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/tool_bar"
+        android:background="@color/lightwhite" />
+
+    <TextView
+        android:id="@+id/tvwallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgwhite"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:gravity="center"
+        android:text="Wallet Balance " />
+
+    <TextView
+        android:id="@+id/tvdollar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvwallet"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:text="$ 0"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightwhite"
+        android:layout_below="@+id/tvdollar"/>
+
+</RelativeLayout>
